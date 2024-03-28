@@ -30,7 +30,7 @@ trap cleanup 0
 trans(){
     while read audio; do
         # transcribe audio
-        whisper "$audio" --fp16 False --language English --model tiny --output_dir /tmp
+        whisper "$audio" --fp16 False --language English --model small --output_dir /tmp
         # remove temporary audio file
         rm -f "$audio"
         # Type text to terminal, in background
