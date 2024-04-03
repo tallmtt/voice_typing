@@ -28,7 +28,7 @@ This assumes [Whisper AI](https://github.com/openai/whisper) and other dependenc
 
 For Debian systems:
 ```
-sudo apt install sox lame ydotool openai-whisper libsox-fmt-mp3
+sudo apt install sox lame ydotool ydotoold openai-whisper libsox-fmt-mp3
 git clone git@github.com:tallmtt/voice_typing.git
 sudo chmod +s $(which ydotool)
 cd voice_typing
@@ -37,7 +37,7 @@ cd voice_typing
 
 Notes:
 - Adjust mic volume for best result.
-- First run might be slow as it needs to download the model (better yet, use whisper from cli first to download the model (tiny))
+- First run might be slow as it needs to download the model (better yet, use whisper from cli first to download the model (base.en))
 
 Recommended:
 - Add a Keybinding for mic mute/unmute - Text is generated and fills in after muted (might be the needed because of my poor mic quality)
